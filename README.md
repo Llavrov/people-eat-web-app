@@ -51,6 +51,14 @@ Start locally:
 yarn storybook:start
 ```
 
+### Storybook
+
+Start locally:
+
+```bash
+yarn storybook:start
+```
+
 ## Integration
 
 | Available Pages                                                                       |               |
@@ -62,6 +70,8 @@ yarn storybook:start
 | [Chef sign up page](https://integration-people-eat.cem-yilmaz.de/chef-sign-up)        | /chef-sign-up |
 | [Profile page](https://integration-people-eat.cem-yilmaz.de/profile)                  | /profile      |
 | [Chef profile page](https://integration-people-eat.cem-yilmaz.de/chef-profile)        | /chef-profile |
+
+Storybook in integration: [https://storybook-integration-people-eat.cem-yilmaz.de](https://storybook-integration-people-eat.cem-yilmaz.de)
 
 Storybook in integration: [https://storybook-integration-people-eat.cem-yilmaz.de](https://storybook-integration-people-eat.cem-yilmaz.de)
 

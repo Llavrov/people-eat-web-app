@@ -62,5 +62,4 @@ const config = {
         'import/no-extraneous-dependencies': 'error',
     },
 };
-
 module.exports = config;
