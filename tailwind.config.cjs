@@ -101,6 +101,9 @@ const config = {
             fontFamily: {
                 manrope: ['Manrope', 'Arial', 'sans-serif'],
             },
+            fontFamily: {
+                manrope: ['Manrope'],
+            },
         },
     },
     plugins: [],
