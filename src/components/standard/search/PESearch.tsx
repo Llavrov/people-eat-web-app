@@ -32,8 +32,10 @@ export default function PESearch({ onSearchClick }: PeopleEatSearchProps): React
     useEffect(() => {
         document.addEventListener('click', (event) => {
             const classList = (event.target as Element).classList.value;
+            const parentClassList = (event.target as HTMLElement).offsetParent.classList.value;
 
-            if (!classList.includes('people-eat-autocomplete-item') && !classList.includes('MuiInputBase-input')) setFocus(false);
+            if (!classList.includes('people-eat-autocomplete-item') && !parentClassList.includes('people-eat-search-input'))
+                setFocus(false);
         });
     }, [focus]);
 
@@ -52,6 +54,7 @@ export default function PESearch({ onSearchClick }: PeopleEatSearchProps): React
                 <>
                     <Input
                         onChange={(event): void => handleInputChange(event, setCity)}
+                        className={'people-eat-search-input'}
                         sx={{ boxSizing: 'border-box', maxHeight: '20px' }}
                         disableUnderline
                         onFocus={(): void => setFocus(true)}
